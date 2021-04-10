@@ -25,11 +25,12 @@ body{
 a:link {
     text-decoration: none;
     color: white;
+    opacity: 30%;
 }
 
 a:hover {
     cursor: pointer;
-    color:sandybrown;
+    opacity: 100%;
 }
 
 a:visited {
@@ -62,6 +63,14 @@ a:visited {
     line-height: 4rem;
     letter-spacing: -3px;
     z-index: 2;
+}
+
+h2 {
+    opacity: 30%;
+}
+
+h2:hover {
+    opacity: 100%;
 }
 
 .cursor{
