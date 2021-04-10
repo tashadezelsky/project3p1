@@ -98,7 +98,7 @@ h1{
     font-size: 23rem;
     font-stretch:ultra-condensed;
     margin: 0rem 1rem 0rem 0rem;
-    opacity: 100%;
+    opacity: 30%;
     z-index: 3;
 }
 
@@ -135,7 +135,7 @@ h1{
     max-width: 110%;
     max-height: 100%;
     min-height: 120vh;
-    min-width: 70%;
+    min-width: 80%;
     border-radius: 50%;
 }
 
