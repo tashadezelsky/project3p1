@@ -1,0 +1,175 @@
+@font-face {
+    font-family: kaftan;
+    src: url(kaftan.otf);
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: kaftan;
+    color: white;
+    max-width: 100%;
+    background: url('../images/bg1.png') no-repeat fixed;
+    background-size: cover;
+
+}
+
+.bgimg-circle {
+    /*border: 2px solid yellowgreen;*/
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100vh;
+    z-index: 1;
+}
+
+.bgimg-circle img{
+    /*border: 2px solid yellowgreen;*/
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1;
+    border-radius: 0%;
+    width: 100%;
+    min-height: 100vh;
+
+    /*opacity: 30%;*/
+}
+
+.cursor1 {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    top: calc(50% - 10rem);
+    left: calc(50% - 10rem);
+    width: 44rem;
+    height: 44.1rem;
+    border-radius: 50%;
+    background: url(../images/bg1.png) no-repeat, fixed;
+    background-size: cover;
+    opacity: 100%;
+    z-index: 2;
+}
+
+
+
+/*Airtable content from here 
+    Text: prose + title in container(1) */
+
+.container {
+    /*border: 2px solid orange;*/
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: 100%;
+    z-index: 3;
+    gap: 5rem;
+    margin-top: 50rem;
+}
+
+.gallery-container {
+    /*border: 2px solid red;*/
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    min-height: 100vh;
+    max-height: 100vh;
+    max-width: 100%;
+    z-index: 3;
+    opacity: 100%;
+}
+
+
+h4{
+    padding: 1rem;
+    margin: 0rem;
+    font-size: 5rem;
+    line-height: 4.2rem;
+    grid-column: span 3/3;
+    margin: 2rem 1rem 1rem 2rem;
+    padding: 1rem;
+    z-index: 3;
+}
+
+h1{
+    grid-row: 4/5;
+    grid-column: 4/5;
+    font-size: 23rem;
+    font-stretch:ultra-condensed;
+    margin: 0rem 1rem 0rem 0rem;
+    opacity: 100%;
+    z-index: 3;
+}
+
+.image-container {
+    /*border: 2px solid blue;*/
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    min-height: 100vh;
+    max-width: 100%;
+    justify-content: center;
+    z-index: -1;
+}
+
+
+.image-circle{
+    /*border: 2px solid greenyellow;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    min-width: 70%;
+    min-height: 120vh;
+    max-height: 70vh;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+
+.image-circle img{
+    /*border: 2px solid orange;*/
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 110%;
+    max-height: 100%;
+    min-height: 120vh;
+    min-width: 70%;
+    border-radius: 50%;
+}
+
+.bgimage1 {
+    display: flex;
+    flex-wrap: wrap;
+    position: fixed;
+    background: url('../images/bg1.png') no-repeat fixed;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    opacity: 20%;
+    z-index: -1;
+    
+}
+
+/*.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid red;
+    width: 100%;
+    height: 100vh;
+}
+
+.cursor2 {
+    position: fixed;
+      top: calc(50% - 10rem);
+      left: calc(50% - 10rem);
+      width: 30rem;
+      height: 30rem;
+      border-radius: 50%;
+      z-index: -1;
+      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Waterhouse_Hylas_and_the_Nymphs_Manchester_Art_Gallery_1896.15.jpg/1200px-Waterhouse_Hylas_and_the_Nymphs_Manchester_Art_Gallery_1896.15.jpg') 50% 50% no-repeat fixed;
+      background-size: cover;
+      opacity: 30%;
+    }
+
